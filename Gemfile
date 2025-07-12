@@ -10,11 +10,11 @@ source "https://rubygems.org"
 
 #ruby '~> 2.7'
 
-gem "jekyll", "~> 4.3.0", group: :jekyll_plugins
+gem "jekyll", "~> 4.3.1", group: :jekyll_plugins
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.12"
-  gem "jekyll-seo-tag", "~> 2.7.1"
+  gem "jekyll-feed", "~> 0.16", ">= 0.16.0"
+  gem "jekyll-seo-tag", "~> 2.8.0"
   gem "jekyll-sitemap", "~> 1.4.0"
 end
 
@@ -28,8 +28,8 @@ end
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 
-gem 'html-proofer'
-gem "webrick", "~> 1.7"
+gem 'html-proofer', '>= 3.19.3'
+gem "webrick", "~> 1.8", ">= 1.8.2"
 # used for _plugins/absolutist.rb
 gem "oga", "~> 3.4"
 gem "addressable", "~> 2.8"
